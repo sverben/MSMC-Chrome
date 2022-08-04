@@ -1,0 +1,20 @@
+{ // Change this to match your project
+  "include": [
+    "MSMC/src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "outDir": "extension/msmc",
+    "moduleResolution": "Node",
+    "target": "ES6",
+    "allowJs": true,
+    "importHelpers": false,
+    "esModuleInterop": true,
+    "module": "ES6",
+    "rootDir": "MSMC/src/",
+    "removeComments": true
+  }
+}

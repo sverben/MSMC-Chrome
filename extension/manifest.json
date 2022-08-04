@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Prismarine Chrome",
+  "version": "1.0.0",
+  "description": "Enables online mode for Prismarine Web Client",
+  "host_permissions": [
+    "https://authserver.mojang.com/*",
+    "https://sessionserver.mojang.com/*",
+    "https://login.live.com/*",
+    "https://user.auth.xboxlive.com/*",
+    "https://api.minecraftservices.com/*",
+    "https://profile.xboxlive.com/*",
+    "https://xsts.auth.xboxlive.com/*"
+  ],
+  "externally_connectable": {
+    "matches": ["http://localhost:8080/*", "https://webclient.prismarine.js.org/*"]
+  },
+  "background": {
+    "service_worker": "sw.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "windows",
+    "storage"
+  ],
+  "minimum_chrome_version": "92"
+}

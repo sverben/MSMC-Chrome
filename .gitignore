@@ -1,0 +1,7 @@
+# build files
+extension/msmc
+extension/types
+node_modules
+
+# IDE files
+.idea
